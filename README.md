@@ -70,19 +70,19 @@ BEST_MODEL_PATH = '[./FIFO_final_model.pth](https://drive.google.com/file/d/1UF-
 )'
 
 Evaluating FIFO model
-```python
-python evaluate.py --file-name 'FIFO_model' --restore-from BEST_MODEL_PATH
+```bash
+(fifo) ~/FIFO$ python evaluate.py --file-name 'FIFO_model' --restore-from BEST_MODEL_PATH
 ```
 
 
 ## Training
 Pretraining fog-pass filtering module
-```python
-python main.py --file-name 'fog_pass_filtering_module' --restore-from PRETRAINED_SEG_MODEL_PATH --modeltrain 'no'
+```bash
+(fifo) ~/FIFO$ python main.py --file-name 'fog_pass_filtering_module' --restore-from PRETRAINED_SEG_MODEL_PATH --modeltrain 'no'
 ```
 Training FIFO
-```python
-python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-decomp PRETRAINED_FILTER_PATH --modeltrain 'train'
+```bash
+(fifo) ~/FIFO$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-decomp PRETRAINED_FILTER_PATH --modeltrain 'train'
 ```
 
 

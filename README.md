@@ -52,10 +52,10 @@ This repository is developed and tested on
 * Required environment is presented in the 'FIFO.yaml' file
 * Clone this repo
 ```bash
-~$ git clone https://github.com/Sohyun-lee96/FIFO
-~$ cd FIFO
-~/FIFO$ conda env create --file FIFO.yaml
-~/FIFO$ conda activate FIFO.yaml
+~$ git clone https://github.com/Sohyun-l/fifo
+~$ cd fifo
+~/fifo$ conda env create --file FIFO.yaml
+~/fifo$ conda activate FIFO.yaml
 ```
 
 ## Pretrained Models
@@ -71,18 +71,18 @@ BEST_MODEL_PATH = '[./FIFO_final_model.pth](https://drive.google.com/file/d/1UF-
 
 Evaluating FIFO model
 ```bash
-(fifo) ~/FIFO$ python evaluate.py --file-name 'FIFO_model' --restore-from BEST_MODEL_PATH
+(fifo) ~/fifo$ python evaluate.py --file-name 'FIFO_model' --restore-from BEST_MODEL_PATH
 ```
 
 
 ## Training
 Pretraining fog-pass filtering module
 ```bash
-(fifo) ~/FIFO$ python main.py --file-name 'fog_pass_filtering_module' --restore-from PRETRAINED_SEG_MODEL_PATH --modeltrain 'no'
+(fifo) ~/fifo$ python main.py --file-name 'fog_pass_filtering_module' --restore-from PRETRAINED_SEG_MODEL_PATH --modeltrain 'no'
 ```
 Training FIFO
 ```bash
-(fifo) ~/FIFO$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-decomp PRETRAINED_FILTER_PATH --modeltrain 'train'
+(fifo) ~/fifo$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-decomp PRETRAINED_FILTER_PATH --modeltrain 'train'
 ```
 
 

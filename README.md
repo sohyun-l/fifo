@@ -82,7 +82,7 @@ Pretraining fog-pass filtering module
 ```
 Training FIFO
 ```bash
-(fifo) ~/fifo$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-decomp PRETRAINED_FILTER_PATH --modeltrain 'train'
+(fifo) ~/fifo$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-fogpass PRETRAINED_FILTER_PATH --modeltrain 'train'
 ```
 
 

@@ -52,7 +52,7 @@ This repository is developed and tested on
 * Required environment is presented in the 'FIFO.yaml' file
 * Clone this repo
 ```bash
-~$ git clone https://github.com/Sohyun-l/fifo
+~$ git clone https://github.com/sohyun-l/fifo
 ~$ cd fifo
 ~/fifo$ conda env create --file FIFO.yaml
 ~/fifo$ conda activate FIFO.yaml

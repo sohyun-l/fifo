@@ -1,7 +1,7 @@
 # FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation
 
 ### [Project Page](http://cvlab.postech.ac.kr/research/FIFO/) | [Paper](https://arxiv.org/abs/2204.01587)
-This repo is the official implementation of [**CVPR 2022 Oral**] paper: "[**FIFO**: Learning Fog-invariant Features for Foggy Scene Segmentation](https://arxiv.org/abs/2204.01587)".
+This repo is the official implementation of [**CVPR 2022 Oral, Best Paper Finalist**] paper: "[**FIFO**: Learning Fog-invariant Features for Foggy Scene Segmentation](https://arxiv.org/abs/2204.01587)".
 
 > [FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation](https://arxiv.org/abs/2204.01587)     
 > [Sohyun Lee](https://sohyun-l.github.io)<sup>1</sup>, Taeyoung Son<sup>2</sup>, [Suha Kwak](http://cvlab.postech.ac.kr/~suhakwak/)<sup>1</sup>\
